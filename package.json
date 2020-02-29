@@ -1,0 +1,43 @@
+{
+  "name": "@qlueui/core",
+  "version": "0.0.0",
+  "description": "Qlue-UI. The component library from Qlue",
+  "license": "MIT",
+  "author": "qlue-dev <developer@qlue.id>",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "storybook": "start-storybook -p 1000",
+    "storybook:build": "build-storybook",
+    "build": "yarn clean && microbundle --jsx React.createElement",
+    "watch": "microbundle watch --jsx React.createElement",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "5.3.13",
+    "@storybook/addon-links": "5.3.13",
+    "@storybook/addons": "5.3.13",
+    "@storybook/react": "5.3.13",
+    "@storybook/theming": "5.3.13",
+    "babel-loader": "8.0.6",
+    "eslint": "6.8.0",
+    "eslint-config-google": "0.14.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-react": "7.18.3",
+    "microbundle": "0.12.0-next.8",
+    "react-is": "16.13.0",
+    "storybook-addon-jsx": "7.1.14",
+    "styled-components": "5.0.1"
+  },
+  "dependencies": {
+    "prop-types": "15.7.2"
+  },
+  "peerDependencies": {
+    "react": ">= 16.8",
+    "react-dom": ">= 16.8",
+    "react-is": ">= 16.8",
+    "styled-components": ">= 3"
+  }
+}
